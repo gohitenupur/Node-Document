@@ -29,12 +29,12 @@ Ex - console.log(__dirname)
 
 <p>Some of the methods provided by the path module include:</p>
 <ul>
-<li>path.join([...paths]): Joins all given path segments together using the platform-specific separator as a delimiter, then normalizes the resulting path.<li>
-<li>path.normalize(path): Normalizes a path, resolving '..' and '.' segments.<li>
-<li>path.resolve([...paths]): Resolves a sequence of paths or path segments into an absolute path.<li>
-<li>path.dirname(path): Returns the directory name of a path.<li>
-<li>path.basename(path[, ext]): Returns the last portion of a path, optionally removing a file extension.<li>
-<li>path.extname(path): Returns the file extension of a path.<li>
+<li>path.join([...paths]): Joins all given path segments together using the platform-specific separator as a delimiter, then normalizes the resulting path.</li>
+<li>path.normalize(path): Normalizes a path, resolving '..' and '.' segments.</li>
+<li>path.resolve([...paths]): Resolves a sequence of paths or path segments into an absolute path.</li>
+<li>path.dirname(path): Returns the directory name of a path.</li>
+<li>path.basename(path[, ext]): Returns the last portion of a path, optionally removing a file extension.</li>
+<li>path.extname(path): Returns the file extension of a path.</li>
 </ul>
 
 <P>
@@ -55,5 +55,14 @@ console.log(myPath); // Output the resulting path
 
 </ul>
 
+<h3>In Node.js, the process object provides access to the standard input (stdin) and standard output (stdout) streams of the current process.</h3>
+
+process.stdin.on('data', (data) => {
+  console.log(`Received data: ${data}`);
+});
+
+<h3>The stdout stream is a writable stream that represents output to the user or to a file. You can write data to stdout using the process.stdout.write() method:</h3>
+
+process.stdout.write('Hello, world!\n');
 
 
