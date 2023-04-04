@@ -23,3 +23,22 @@ Learn Node with basics
 Ex - console.log(__dirname)
      console.log(__filename)
      
+   <h2>Path Module</h2>
+     <p>In Node.js, the path module provides utilities for working with file and directory paths. This module provides a way to manipulate file paths regardless of the underlying operating system.</p>
+     
+
+<p>Some of the methods provided by the path module include:</p>
+
+<p> --path.join([...paths]): Joins all given path segments together using the platform-specific separator as a delimiter, then normalizes the resulting path.</p>
+<p> --path.normalize(path): Normalizes a path, resolving '..' and '.' segments.</p>
+<p> --path.resolve([...paths]): Resolves a sequence of paths or path segments into an absolute path.</p>
+<p> --path.dirname(path): Returns the directory name of a path.</p>
+<p> --path.basename(path[, ext]): Returns the last portion of a path, optionally removing a file extension.</p>
+<p> --path.extname(path): Returns the file extension of a path.</p>
+
+<P>
+const path = require('path'); // Import the path module
+const myPath = path.join('/Users/john', 'Documents', 'file.txt'); // Join the path segments together
+console.log(myPath); // Output the resulting path
+</p>
+
